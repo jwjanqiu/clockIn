@@ -84,18 +84,12 @@
                 <div class="content">
                     <form action="/push" method="post">
                         @csrf
-                        手机号:<input type="text" name="useraccount">
+                        手机号:<input type="tel" name="useraccount" style="width: 220px; height: 50px">
+                        <br>
                         <input type="submit" value="上班打卡">
                     </form>
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
             </div>
         </div>
     </body>
