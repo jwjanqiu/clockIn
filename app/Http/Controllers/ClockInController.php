@@ -37,6 +37,7 @@ class ClockInController extends Controller
         $message->build();
         $result = $sender->sendToUserAccount($message,$mobile)->getRaw();
         Log::info('推送手机: ' . $mobile . '推送结果: ' . json_encode($result));
-        return view('welcome');
+        return view('welcome',['result' => $result['result']]);
     }
+
 }
